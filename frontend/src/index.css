@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-gray-900;
+    background: #f5f7fb;
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom button hover effect */
+.btn-primary {
+  @apply bg-secondary hover:bg-[#18a189] text-white font-bold py-3 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-secondary/30;
+}
